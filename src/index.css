@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+*{
+    box-sizing:border-box;
+}
+
+button{
+    cursor:pointer;
+}
+
+::selection{
+    background:#6366f1;
+    color:white;
+}
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#6366f1;
+    border-radius:50px;
+}
+
+::-webkit-scrollbar-track{
+    background:transparent;
+}
+.dark body{
+    background:
+        radial-gradient(circle at 15% 20%,
+        rgba(34,211,238,.14),
+        transparent 28%),
+
+        radial-gradient(circle at 85% 75%,
+        rgba(99,102,241,.16),
+        transparent 32%),
+
+        radial-gradient(circle at 50% 45%,
+        rgba(255,255,255,.03),
+        transparent 60%),
+
+        linear-gradient(
+            135deg,
+            var(--bg),
+            #071526 75%
+        );
+}
+
+h1,h2,h3,h4{
+    letter-spacing:-0.03em;
+}
+
+p{
+    line-height:1.8;
+}
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --text-secondary: #475569;
+  --border: #e2e8f0;
+  --primary: #06b6d4;
+}
+
+.dark {
+  --bg: #030712;
+  --surface: #0f172a;
+  --text: #ffffff;
+  --text-secondary: #94a3b8;
+  --border: #334155;
+  --primary: #22d3ee;
+}
