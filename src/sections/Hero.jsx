@@ -26,7 +26,7 @@ lg:min-h-screen
       </div>
 
       <Container className="relative z-10">
-<div className="grid lg:grid-cols-2 items-center gap-16">
+<div className="grid md:grid-cols-2 items-center gap-12 lg:gap-16">
 
   <div className="order-2 lg:order-1">
     <HeroContent />
