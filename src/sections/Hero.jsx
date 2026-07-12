@@ -15,6 +15,7 @@ overflow-hidden
 pt-20
 pb-16
 sm:py-28
+min-h-[650px]
 lg:min-h-screen
 "
 >
