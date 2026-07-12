@@ -12,7 +12,8 @@ min-h-screen
 flex
 items-center
 overflow-hidden
-py-24
+pt-20
+pb-16
 sm:py-28
 lg:min-h-screen
 "
